@@ -2,11 +2,34 @@ package com.example.streams.demo;
 
 // LinkedList Class crudely modified from https://www.geeksforgeeks.org/implementing-a-linked-list-in-java-using-class/
 
+import java.util.Spliterator;
+import java.util.function.Consumer;
+
 // Java program to implement
 // a Singly Linked List
-public class LinkedList {
+public class LinkedList implements Spliterator {
 
     Node head; // head of list
+
+    @Override
+    public boolean tryAdvance(Consumer action) {
+        return false;
+    }
+
+    @Override
+    public Spliterator trySplit() {
+        return null;
+    }
+
+    @Override
+    public long estimateSize() {
+        return 0;
+    }
+
+    @Override
+    public int characteristics() {
+        return 0;
+    }
 
     // Linked list Node.
     // This inner class is made static

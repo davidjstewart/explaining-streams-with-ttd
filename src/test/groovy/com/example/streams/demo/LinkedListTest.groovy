@@ -3,7 +3,7 @@ package com.example.streams.demo
 import spock.lang.Specification
 
 class LinkedListTest extends Specification {
-    def "add items to linkedlist"() {
+    def "add items to LinkedList"() {
         setup:
         LinkedList list = new LinkedList()
 

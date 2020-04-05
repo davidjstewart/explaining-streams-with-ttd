@@ -7,6 +7,10 @@ This exercise is implemented in Java and will recreate stream functions such as 
 I chose to use Java for this exercise because the equivalent JavaScript functions are simply too easy to recreate.
 
 ## Route Travelled in Reality
-The original ambition was to understand how Java Streams work internally using TDD to recreate some of the functional high order implementations (e.g. map, filter, etc). After some reading the method of how Streams iterate through a collection became the subject of this exercise.
+The original ambition was to understand how Java Streams work internally using TDD to recreate some of the functional high order implementations (e.g. map, filter, etc). After some reading the method of how Streams iterate through a collection became the subject of this exercise, i.e. using spliterators.
 
 _"Please remember, Streams are not data containers and streams do not contain any data. You may think streams as fancy iterator and data just pass through that. This is analogous to an old iterator." - [basicstrong.com](https://basicsstrong.com/creating-your-own-streams-using-custom-spliterator-and-how-streams-works-internally-in-java/)_
+
+####Task One
+Write some tests against the Java 8 Streams in order to demonstrate some of the true
+nature of the api (see test file Java8Streams.groovy).
